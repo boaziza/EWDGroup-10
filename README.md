@@ -1,10 +1,11 @@
 **TEAM NAME : EWDGroup-10**
 
 **PROJECT DESCRIPTION**
---------------------
+---------------------
+Our project is supposed to process MoMo SMS data in XML format, clean and categorize the data, store it in a relational database, and build a frontend interface to analyze and visualize the data.
 
 **MEMBERS**
---------
+-----------
 
 1. IZA Prince Boaz (b.iza@alustudent.com)
 2. Bodgar Kwizera (b.kwizera@alustudent.com)

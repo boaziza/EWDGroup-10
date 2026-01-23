@@ -4,7 +4,7 @@ USE momo_db;
 
 CREATE TABLE IF NOT EXISTS users (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(50) NOT NULL,
+    name VARCHAR(100) NOT NULL,
     phoneNumber VARCHAR(20),
     email VARCHAR(200)
 );
@@ -44,6 +44,7 @@ CREATE TABLE IF NOT EXISTS systemLog (
     transactionId INT,
     FOREIGN KEY (transactionId) REFERENCES transactions(id) ON DELETE SET NULL
 );
+
 
 
 

@@ -2,6 +2,10 @@
 
 **TEAM NAME: EWDGroup-10**
 
+## PARTICIPATION SHEET LINK
+
+https://docs.google.com/spreadsheets/d/1wAklxkkMbBbTzxuEzEun_ShNNDVHy7w8KLH-u7Ns1lk/edit?usp=sharing
+
 ## PROJECT DESCRIPTION
 
 Our project processes MoMo SMS data in XML format, cleans and categorizes the data, stores it in a relational database, and builds a frontend interface to analyze and visualize the data.

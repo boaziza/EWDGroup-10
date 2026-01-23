@@ -1,0 +1,47 @@
+{
+  "users": [
+    {"id": 1, "name": "Alice", "phoneNumber": "250788000111", "email": "alice@example.com"},
+    {"id": 2, "name": "Bob", "phoneNumber": "250788000222", "email": "bob@example.com"},
+    {"id": 3, "name": "Charlie", "phoneNumber": "250788000333", "email": "charlie@example.com"},
+    {"id": 4, "name": "Diana", "phoneNumber": "250788000444", "email": "diana@example.com"},
+    {"id": 5, "name": "Ethan", "phoneNumber": "250788000555", "email": "ethan@example.com"}
+  ],
+  "transactionsCategory": [
+    {"id": 1, "name": "Payment", "description": "Payment to merchants"},
+    {"id": 2, "name": "Transfer", "description": "Peer-to-peer money transfer"},
+    {"id": 3, "name": "Withdrawal", "description": "Cash withdrawal from agents"},
+    {"id": 4, "name": "Deposit", "description": "Deposit into wallet"},
+    {"id": 5, "name": "Bill", "description": "Utility bill payment"}
+  ],
+  "transactions": [
+    {
+      "id": 1,
+      "amount": 1000.00,
+      "transactionDate": "2026-01-23T10:00:00",
+      "status": "PENDING",
+      "user": {"id": 1, "name": "Alice"},
+      "category": {"id": 1, "name": "Payment"},
+      "logs": [
+        {"id": 1, "message": "Transaction created", "severity": "INFO"}
+      ]
+    },
+    {
+      "id": 2,
+      "amount": 500.00,
+      "transactionDate": "2026-01-23T11:00:00",
+      "status": "SUCCESS",
+      "user": {"id": 2, "name": "Bob"},
+      "category": {"id": 2, "name": "Transfer"},
+      "logs": [
+        {"id": 2, "message": "Transaction processed successfully", "severity": "INFO"}
+      ]
+    }
+  ],
+  "systemLog": [
+    {"id": 1, "logTime": "2026-01-23T10:00:00", "message": "Transaction created", "severity": "INFO", "transactionId": 1},
+    {"id": 2, "logTime": "2026-01-23T11:00:00", "message": "Transaction processed successfully", "severity": "INFO", "transactionId": 2},
+    {"id": 3, "logTime": "2026-01-23T12:00:00", "message": "Transaction failed due to insufficient funds", "severity": "ERROR", "transactionId": 3},
+    {"id": 4, "logTime": "2026-01-23T13:00:00", "message": "Transaction processed successfully", "severity": "INFO", "transactionId": 4},
+    {"id": 5, "logTime": "2026-01-23T14:00:00", "message": "Transaction pending", "severity": "WARNING", "transactionId": 5}
+  ]
+}

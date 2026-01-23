@@ -40,9 +40,10 @@ CREATE TABLE IF NOT EXISTS systemLog (
     id INT AUTO_INCREMENT PRIMARY KEY,
     logTime DATETIME DEFAULT CURRENT_TIMESTAMP,
     message TEXT NOT NULL,
-    severity VARCHAR(25) NOT NULL,
+    severity VARCHAR(50) NOT NULL,
     transactionId INT,
     FOREIGN KEY (transactionId) REFERENCES transactions(id) ON DELETE SET NULL
 );
+
 
 
